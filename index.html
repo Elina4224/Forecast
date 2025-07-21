@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecast</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Forecast</title>
 </head>
 <body>
+
+  <div class="weather">
     <header>
-    <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-    </form>
-  </header>
-  <main>
-    <div><h1>Paris</h1>  
-<p>
-Tuesday 15:00, scattered clouds 
-<br />
-Humidity: 50%, Wind: 10km/h
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+    </header>
 
-</p></div>
-<div>⛅ 12°</div>
-
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday 15:00, scattered clouds <br />
+            Humidity: <strong>50%</strong>, Wind: <strong>10km/h</strong>
+          </p>
+        </div>
+      
+        <div class="weather-app-temp-container">
+            <div class="weather-app-icon">⛅</div>
+      <div class="weather-app-temp"> 12</div>
+      <div class="weather-app-unit">°C</div>
+        </div>
+      
+</div>
 </main>
-  
-  
-  <footer>
+      <footer>
         <p>
           Coded by
           <a href="https://www.shecodes.io/graduates/172863-elina-huseynova" target="_blank">Elina H.</a> is
@@ -33,5 +45,8 @@ Humidity: 50%, Wind: 10km/h
           <a href="https://forecast-app-week7.netlify.app/" target="_blank">hosted on Netlify</a>
         </p>
       </footer>
+    
+  </div>
+
 </body>
 </html>
