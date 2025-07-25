@@ -63,7 +63,8 @@ display: flex;
 }
 
 .weather-app-icon {
-    font-size: 44px;
+    width: 60px;
+    height: 60px;
     margin-top: 22px;
 }
 
