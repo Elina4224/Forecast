@@ -101,10 +101,10 @@ display: flex;
     margin-top: 10px;
     color: #f65282;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.weather-forecast-tempearure {
+.weather-forecast-temperature {
     padding: 0 10px;
 }
 main {
